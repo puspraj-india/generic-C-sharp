@@ -1,0 +1,16 @@
+F:\C Sharp\Generics\WiredBrainCofee.StackApp\bin\Debug\net5.0\WiredBrainCofee.StackApp.exe
+F:\C Sharp\Generics\WiredBrainCofee.StackApp\bin\Debug\net5.0\WiredBrainCofee.StackApp.deps.json
+F:\C Sharp\Generics\WiredBrainCofee.StackApp\bin\Debug\net5.0\WiredBrainCofee.StackApp.runtimeconfig.json
+F:\C Sharp\Generics\WiredBrainCofee.StackApp\bin\Debug\net5.0\WiredBrainCofee.StackApp.runtimeconfig.dev.json
+F:\C Sharp\Generics\WiredBrainCofee.StackApp\bin\Debug\net5.0\WiredBrainCofee.StackApp.dll
+F:\C Sharp\Generics\WiredBrainCofee.StackApp\bin\Debug\net5.0\ref\WiredBrainCofee.StackApp.dll
+F:\C Sharp\Generics\WiredBrainCofee.StackApp\bin\Debug\net5.0\WiredBrainCofee.StackApp.pdb
+F:\C Sharp\Generics\WiredBrainCofee.StackApp\obj\Debug\net5.0\WiredBrainCofee.StackApp.csproj.AssemblyReference.cache
+F:\C Sharp\Generics\WiredBrainCofee.StackApp\obj\Debug\net5.0\WiredBrainCofee.StackApp.GeneratedMSBuildEditorConfig.editorconfig
+F:\C Sharp\Generics\WiredBrainCofee.StackApp\obj\Debug\net5.0\WiredBrainCofee.StackApp.AssemblyInfoInputs.cache
+F:\C Sharp\Generics\WiredBrainCofee.StackApp\obj\Debug\net5.0\WiredBrainCofee.StackApp.AssemblyInfo.cs
+F:\C Sharp\Generics\WiredBrainCofee.StackApp\obj\Debug\net5.0\WiredBrainCofee.StackApp.csproj.CoreCompileInputs.cache
+F:\C Sharp\Generics\WiredBrainCofee.StackApp\obj\Debug\net5.0\WiredBrainCofee.StackApp.dll
+F:\C Sharp\Generics\WiredBrainCofee.StackApp\obj\Debug\net5.0\ref\WiredBrainCofee.StackApp.dll
+F:\C Sharp\Generics\WiredBrainCofee.StackApp\obj\Debug\net5.0\WiredBrainCofee.StackApp.pdb
+F:\C Sharp\Generics\WiredBrainCofee.StackApp\obj\Debug\net5.0\WiredBrainCofee.StackApp.genruntimeconfig.cache

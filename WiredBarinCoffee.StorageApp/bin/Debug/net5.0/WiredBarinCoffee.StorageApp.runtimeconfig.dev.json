@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\azurevm\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\azurevm\\.nuget\\packages"
+    ]
+  }
+}
