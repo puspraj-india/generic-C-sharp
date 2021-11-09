@@ -26,7 +26,7 @@ namespace WiredBarinCoffee.StorageApp.Repositories
 
         public IEnumerable<T> GetAll()
         {
-            return _dbSet.ToList<T>();
+            return _dbSet.OrderBy(item=>item.Id).ToList<T>();
         }
 
         
