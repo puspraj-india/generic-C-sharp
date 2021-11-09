@@ -13,12 +13,25 @@ namespace WiredBarinCoffee.StorageApp
         {
             SqlRepository<Employee> repo1 = new(new StorageAppDbContext());
             AddEmployees(repo1);
+            
+            AddManagers(repo1);
+
+            IWriteRepository<Manager> repo = new SqlRepository<Employee>(new StorageAppDbContext());
+
             GetEmployeeId(repo1);
+
             WriteToConsole(repo1);
             ListRepository<Organisation> repo2 = new();
             AddOrganisations(repo2);
             GetOrganisations(repo2);
             WriteToConsole(repo2);
+        }
+
+        private static void AddManagers(IWriteRepository<Manager> managerRepository)
+        {
+            managerRepository.Add(new Manager(){FirstName="Sara"});
+            managerRepository.Add(new Manager(){FirstName="Henry"});
+            managerRepository.Save();
         }
 
         private static void WriteToConsole(IReadRepository<IEntity> repo)
