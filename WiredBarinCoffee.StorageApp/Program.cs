@@ -14,30 +14,30 @@ namespace WiredBarinCoffee.StorageApp
             SqlRepository<Employee> repo1 = new(new StorageAppDbContext());
             AddEmployees(repo1);
             GetEmployeeId(repo1);
-            GetAllEmployees(repo1);
+            WriteToConsole(repo1);
             ListRepository<Organisation> repo2 = new();
             AddOrganisations(repo2);
             GetOrganisations(repo2);
-            GetAllOrganisations(repo2);
+            WriteToConsole(repo2);
         }
 
-        private static void GetAllOrganisations(ListRepository<Organisation> repo2)
+        private static void WriteToConsole(IReadRepository<IEntity> repo)
         {
-            IEnumerable<Organisation> organisations=repo2.GetAll();
-            foreach(Organisation organisation in organisations)
+            var items=repo.GetAll();
+            foreach(var item in items)
             {
-                Console.WriteLine(organisation);
+                Console.WriteLine(item);
             }
         }
 
-        private static void GetAllEmployees(SqlRepository<Employee> repo1)
-        {
-            IEnumerable<Employee> employeees= repo1.GetAll();
-            foreach(Employee employee in employeees)
-            {
-                Console.WriteLine(employee);
-            }
-        }
+        // private static void GetAllEmployees(SqlRepository<Employee> repo1)
+        // {
+        //     IEnumerable<Employee> employeees= repo1.GetAll();
+        //     foreach(Employee employee in employeees)
+        //     {
+        //         Console.WriteLine(employee);
+        //     }
+        // }
 
         private static void GetOrganisations(IRepository<Organisation> repo2)
         {
