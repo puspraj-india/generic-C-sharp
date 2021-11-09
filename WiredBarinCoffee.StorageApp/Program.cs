@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using WiredBarinCoffee.StorageApp.Data;
 using WiredBarinCoffee.StorageApp.Entities;
@@ -13,9 +14,29 @@ namespace WiredBarinCoffee.StorageApp
             SqlRepository<Employee> repo1 = new(new StorageAppDbContext());
             AddEmployees(repo1);
             GetEmployeeId(repo1);
+            GetAllEmployees(repo1);
             ListRepository<Organisation> repo2 = new();
             AddOrganisations(repo2);
             GetOrganisations(repo2);
+            GetAllOrganisations(repo2);
+        }
+
+        private static void GetAllOrganisations(ListRepository<Organisation> repo2)
+        {
+            IEnumerable<Organisation> organisations=repo2.GetAll();
+            foreach(Organisation organisation in organisations)
+            {
+                Console.WriteLine(organisation);
+            }
+        }
+
+        private static void GetAllEmployees(SqlRepository<Employee> repo1)
+        {
+            IEnumerable<Employee> employeees= repo1.GetAll();
+            foreach(Employee employee in employeees)
+            {
+                Console.WriteLine(employee);
+            }
         }
 
         private static void GetOrganisations(IRepository<Organisation> repo2)

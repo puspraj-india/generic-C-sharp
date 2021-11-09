@@ -14,6 +14,17 @@ namespace WiredBarinCoffee.StorageApp.Repositories
         //     return new T();
         // }
 
+        public IEnumerable<T> GetAll()
+        {
+            return _items.ToList<T>();
+        }
+
+        public T GetById(int id)
+        {
+            return _items.Single(item=>item.Id==id);
+            //return null; // return default(T)
+        }
+
         public void Add(T item)
         {
             item.Id=_items.Count+1;
@@ -24,11 +35,6 @@ namespace WiredBarinCoffee.StorageApp.Repositories
             _items.Remove(item);
         }
 
-        public T GetById(int id)
-        {
-            return _items.Single(item=>item.Id==id);
-            //return null; // return default(T)
-        }
         public void Save()
         {
             foreach(T item in _items)

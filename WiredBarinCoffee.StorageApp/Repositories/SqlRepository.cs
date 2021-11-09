@@ -24,24 +24,31 @@ namespace WiredBarinCoffee.StorageApp.Repositories
         //     return new T();
         // }
 
-        public void Add(T item)
+        public IEnumerable<T> GetAll()
         {
-            // item.Id=_items.Count+1;
-            // _items.Add(item);
-            _dbSet.Add(item);
-        }
-        public void remove(T item)
-        {
-            // _items.Remove(item);
-            _dbSet.Remove(item);
+            return _dbSet.ToList<T>();
         }
 
+        
         public T GetById(int id)
         {
             //return _items.Single(item=>item.Id==id);
             //return null; // return default(T)
             return _dbSet.Find(id);
         }
+        public void Add(T item)
+        {
+            // item.Id=_items.Count+1;
+            // _items.Add(item);
+            _dbSet.Add(item);
+        }
+
+        public void remove(T item)
+        {
+            // _items.Remove(item);
+            _dbSet.Remove(item);
+        }
+
         public void Save()
         {
             // foreach(T item in _items)

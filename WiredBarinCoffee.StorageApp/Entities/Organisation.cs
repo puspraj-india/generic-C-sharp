@@ -6,9 +6,9 @@ namespace WiredBarinCoffee.StorageApp.Entities
 
         public override string ToString()=> $"Id: {Id}, FirstName: {Name}";
 
-        public Organisation()
-        {
-            System.Console.WriteLine("Organisation cons");
-        }
+        // public Organisation()
+        // {
+        //     System.Console.WriteLine("Organisation cons");
+        // }
     }
 }
