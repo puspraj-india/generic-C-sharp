@@ -68,26 +68,25 @@ namespace WiredBarinCoffee.StorageApp
             Organisation[] organisations= new Organisation[]
             {new Organisation{Name="Microsoft"},
             new Organisation{Name="Google"}};
-            AddBatch(repo2,organisations);
+            RepositoryExtension.AddBatch(repo2,organisations);
             
         }
 
-        private static void AddBatch(IRepository<Organisation> repo2, Organisation[] organisations)
-        {
-            foreach( Organisation organisation in organisations)
-            {
-                repo2.Add(organisation);
-            }
-            repo2.Save();
-        }
+        
 
         private static void AddEmployees(IRepository<Employee> repo1)
         {
-            repo1.Add(new Employee() { FirstName = "Puspraj" });
-            var obj = new Employee() { FirstName = "Neeraj" };
-            repo1.Add(obj);
+            // repo1.Add(new Employee() { FirstName = "Puspraj" });
+            // var obj = new Employee() { FirstName = "Neeraj" };
+            // repo1.Add(obj);
+            var employees = new[]
+            {
+                new Employee(){FirstName="Puspraj"},
+                new Employee(){FirstName="Neeraj"}
+            };
+            RepositoryExtension.AddBatch(repo1,employees);
             //repo1.remove(obj);
-            repo1.Save();
+            // repo1.Save();
         }
     }
 }
