@@ -64,7 +64,20 @@ namespace WiredBarinCoffee.StorageApp
 
         private static void AddOrganisations(IRepository<Organisation> repo2)
         {
-            repo2.Add(new Organisation() { Name = "Pankaj" });
+            //repo2.Add(new Organisation() { Name = "Pankaj" });
+            Organisation[] organisations= new Organisation[]
+            {new Organisation{Name="Microsoft"},
+            new Organisation{Name="Google"}};
+            AddBatch(repo2,organisations);
+            
+        }
+
+        private static void AddBatch(IRepository<Organisation> repo2, Organisation[] organisations)
+        {
+            foreach( Organisation organisation in organisations)
+            {
+                repo2.Add(organisation);
+            }
             repo2.Save();
         }
 

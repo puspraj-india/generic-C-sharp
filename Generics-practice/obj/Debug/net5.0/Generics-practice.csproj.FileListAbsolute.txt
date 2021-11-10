@@ -1,0 +1,16 @@
+F:\C Sharp\Generics\Generics-practice\obj\Debug\net5.0\Generics-practice.csproj.AssemblyReference.cache
+F:\C Sharp\Generics\Generics-practice\obj\Debug\net5.0\Generics-practice.GeneratedMSBuildEditorConfig.editorconfig
+F:\C Sharp\Generics\Generics-practice\obj\Debug\net5.0\Generics-practice.AssemblyInfoInputs.cache
+F:\C Sharp\Generics\Generics-practice\obj\Debug\net5.0\Generics-practice.AssemblyInfo.cs
+F:\C Sharp\Generics\Generics-practice\obj\Debug\net5.0\Generics-practice.csproj.CoreCompileInputs.cache
+F:\C Sharp\Generics\Generics-practice\bin\Debug\net5.0\Generics-practice.exe
+F:\C Sharp\Generics\Generics-practice\bin\Debug\net5.0\Generics-practice.deps.json
+F:\C Sharp\Generics\Generics-practice\bin\Debug\net5.0\Generics-practice.runtimeconfig.json
+F:\C Sharp\Generics\Generics-practice\bin\Debug\net5.0\Generics-practice.runtimeconfig.dev.json
+F:\C Sharp\Generics\Generics-practice\bin\Debug\net5.0\Generics-practice.dll
+F:\C Sharp\Generics\Generics-practice\bin\Debug\net5.0\ref\Generics-practice.dll
+F:\C Sharp\Generics\Generics-practice\bin\Debug\net5.0\Generics-practice.pdb
+F:\C Sharp\Generics\Generics-practice\obj\Debug\net5.0\Generics-practice.dll
+F:\C Sharp\Generics\Generics-practice\obj\Debug\net5.0\ref\Generics-practice.dll
+F:\C Sharp\Generics\Generics-practice\obj\Debug\net5.0\Generics-practice.pdb
+F:\C Sharp\Generics\Generics-practice\obj\Debug\net5.0\Generics-practice.genruntimeconfig.cache
