@@ -68,7 +68,7 @@ namespace WiredBarinCoffee.StorageApp
             Organisation[] organisations= new Organisation[]
             {new Organisation{Name="Microsoft"},
             new Organisation{Name="Google"}};
-            RepositoryExtension.AddBatch(repo2,organisations);
+            repo2.AddBatch(organisations);
             
         }
 
@@ -84,7 +84,7 @@ namespace WiredBarinCoffee.StorageApp
                 new Employee(){FirstName="Puspraj"},
                 new Employee(){FirstName="Neeraj"}
             };
-            RepositoryExtension.AddBatch(repo1,employees);
+            repo1.AddBatch(employees);
             //repo1.remove(obj);
             // repo1.Save();
         }
