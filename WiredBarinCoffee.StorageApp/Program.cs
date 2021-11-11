@@ -11,9 +11,10 @@ namespace WiredBarinCoffee.StorageApp
     {
         static void Main(string[] args)
         {
+
+            ItemAdded item = new ItemAdded(EmployeeMethod);
             SqlRepository<Employee> repo1 = new(new StorageAppDbContext());
             AddEmployees(repo1);
-            
             AddManagers(repo1);
 
             IWriteRepository<Manager> repo = new SqlRepository<Employee>(new StorageAppDbContext());
@@ -27,9 +28,22 @@ namespace WiredBarinCoffee.StorageApp
             WriteToConsole(repo2);
         }
 
+        private static void EmployeeMethod(object item)
+        {
+
+            Console.WriteLine(((Employee)item).FirstName);
+        }
+
         private static void AddManagers(IWriteRepository<Manager> managerRepository)
         {
-            managerRepository.Add(new Manager(){FirstName="Sara"});
+            Manager item = new Manager() { FirstName = "Sara" };
+            var itemCopy=item.Copy();
+            managerRepository.Add(item);
+            if(itemCopy is not null)
+            {
+                itemCopy.FirstName+="_Copy";
+                managerRepository.Add(itemCopy);
+            }
             managerRepository.Add(new Manager(){FirstName="Henry"});
             managerRepository.Save();
         }
