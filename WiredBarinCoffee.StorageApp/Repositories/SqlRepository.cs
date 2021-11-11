@@ -6,17 +6,17 @@ using WiredBarinCoffee.StorageApp.Entities;
 namespace WiredBarinCoffee.StorageApp.Repositories
 {
 
-    public delegate void ItemAdded(object item);
+    public delegate void ItemAdded<T>(T item);
     public class SqlRepository<T> : IRepository<T> where T : class, IEntity//, new()
     {
-        private readonly ItemAdded _itemAddedCallback;
+        private readonly ItemAdded<T>? _itemAddedCallback;
         private readonly DbContext _dbContext;
         private readonly DbSet<T> _dbSet;
 
         // we do not need below list anymore as we are using in-memory SQL database to store data.
         //private readonly List<T> _items= new List<T>();
 
-        public SqlRepository(DbContext dbContext, ItemAdded? itemAddedCallback=null)
+        public SqlRepository(DbContext dbContext, ItemAdded<T>? itemAddedCallback=null)
         {
             _dbContext = dbContext;
             _dbSet = _dbContext.Set<T>();
